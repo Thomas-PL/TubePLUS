@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="js/jquery.mobile-1.4.2/jquery.mobile-1.4.2.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/auth.js"></script>
+        <script type="text/javascript" src="js/search.js"></script>
+        <script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+
+        <title>Youtube++</title>
+    </head>
+    <body>
+        <div id="empty_search" class="message" hidden>No search results...</div>
+        <div id="reload" class="message" hidden>Trying to reload the page...</div>
+        <div id="connection_error" class="message" hidden>Please check your internet connection</div>
+        <div id="wrapper">
+            <table id="search-container" align="center"></table>
+        </div>
+        <div id="button-container">
+            <button id="prev-button" onclick="previousPage();">Previous</button>
+            <button id="next-button" onclick="nextPage();">Next</button>
+        </div>
+    </body>
+</html>

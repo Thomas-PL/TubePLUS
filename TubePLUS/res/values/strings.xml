@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TubePLUS</string>
+    <string name="video_view">VideoView</string>
+    <string name="application">Application</string>
+    <string name="action_search">Search</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_hint">Search...</string>
+    <string name="action_optimizer_settings">Optimizer</string>
+    <string name="action_framework_settings">Framework</string>
+    
+    <!-- activity_survey -->
+    <string name="nextButton">Volgende</string>
+    <string name="previousButton">Vorige</string>
+    <string name="closeButton">Sluiten</string>
+    <string name="doneButton">Gereed</string>
+    
+    <!-- tutorial strings -->
+    <string name="welkom">Welkom</string>
+    <string name="intro">De app zal proberen de gebruikerservaring in zoveel mogelijk situaties en contexten te optimaliseren, gelieve de app dus ook op diverse momenten te gebruiken</string>
+    <string name="interactie">Interactie</string>
+    <string name="main_tut">Klik op een filmpje om het te bekijken. Swipe links of rechts om tussen pagina\'s te switchen</string>
+    <string name="rodeknop">Rode knop</string>
+    <string name="rode_tut">Druk op deze knop indien je op een bepaald moment niet tevreden bent met de geleverde service. Versleep hem als hij in de weg staat! LET OP: max 5 klachten per filmpje!</string>
+    <string name="speler">Videospeler</string>
+    <string name="speler_tut">Druk op play om playback te starten! Het afspelen zal ook verdergaan in de achtergrond, zodat je andere dingen kan doen ondertussen!</string>
+    <string name="zoek">Zoek filmpjes</string>
+    <string name="zoek_tut">Zoek filmpjes door hier iets in te typen</string>
+    <string name="instellingen">Instellingen</string>
+    <string name="instellingen_tut">Verander instellingen voor het framework of de optimizer</string>
+    <string name="home">Home knop</string>
+    <string name="home_tut">Duw op de home knop om terug te keren naar het beginscherm</string>
+    
+    <string name="deviceAdminWarning">Volgende pop-up vraagt u een Device-admin toe te voegen. Dit is nodig voor een feature waarbij het scherm vergrendeld wordt als u de telefoon in u broekzak of dergelijke steekt.</string>
+</resources>

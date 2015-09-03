@@ -1,0 +1,85 @@
+<questionList upperlimit="100" lowerlimit="90">
+    <question class="be.ugent.iii.questions.RatingQuestion" id="1">
+        <description>Wat vindt u van de technische kwaliteit van deze video? (vb. aantal onderbrekingen, laadtijd, scherpte van het beeld...)</description>
+    </question>
+    <question class="be.ugent.iii.questions.RatingQuestion" id="2">
+        <description>Wat vindt u van de inhoud van de video? (vb. genre, acteurs...)</description>
+    </question>   
+    <question class="be.ugent.iii.questions.RatingQuestion" id="3">
+        <description>Wat vindt u van de beeldkwaliteit in deze context?</description>
+        <dependency questionnumber="1" lowerlimit="0" upperlimit="4"/>
+    </question>      
+    <question class="be.ugent.iii.questions.ChoiceQuestion" id="4">
+        <description>Zou u voor het begin van de video een langere wachttijd aanvaarden, wanneer de beeldkwaliteit wordt verbeterd?</description>
+        <dependency questionnumber="1" lowerlimit="0" upperlimit="4"/>
+        <dependency questionnumber="3" lowerlimit="0" upperlimit="4"/>
+        <action action="increaseQuality" answer="1"/>
+        <choice key="1">Ja</choice>
+        <choice key="2">Nee</choice>
+    </question>   
+    <question class="be.ugent.iii.questions.ChoiceQuestion" id="5">
+        <description>Vindt u het aantal keer dat de video werd onderbroken aanvaardbaar?</description>
+        <dependency questionnumber="1" lowerlimit="0" upperlimit="4"/>
+        <choice key="1">Ja</choice>
+        <choice key="2">Nee</choice>
+    </question>
+    <question class="be.ugent.iii.questions.ChoiceQuestion" id="6">
+        <description>Vind u de initiele laadtijd van de video aanvaardbaar?</description>
+        <dependency questionnumber="1" lowerlimit="0" upperlimit="4"/>
+        <choice key="1">Ja</choice>
+        <choice key="2">Nee</choice>
+    </question> 
+    <question class="be.ugent.iii.questions.ChoiceQuestion" id="7">
+        <description>Zou u meer onderbrekingen aanvaarden om de video sneller te kunnen starten?</description>
+        <dependency questionnumber="1" lowerlimit="0" upperlimit="4"/>        
+        <dependency questionnumber="5" lowerlimit="1" upperlimit="1"/>
+        <dependency questionnumber="6" lowerlimit="2" upperlimit="2"/>
+        <action action="increaseNumberOfBufferings" answer="1"/>
+        <choice key="1">Ja</choice>
+        <choice key="2">Nee</choice>
+    </question>    
+    <question class="be.ugent.iii.questions.ChoiceQuestion" id="8">
+        <description>Zou u een langere initiele laadtijd aanvaarden om zo minder onderbrekingen te hebben?</description>
+        <dependency questionnumber="1" lowerlimit="0" upperlimit="4"/>
+        <dependency questionnumber="5" lowerlimit="2" upperlimit="2"/>
+        <dependency questionnumber="6" lowerlimit="1" upperlimit="1"/>
+        <action action="decreaseNumberOfBufferings" answer="1"/>
+        <choice key="1">Ja</choice>
+        <choice key="2">Nee</choice>
+    </question> 
+    <question class="be.ugent.iii.questions.ChoiceQuestion" id="9">
+        <description>Zou u een mindere beeldkwaliteit (lagere resolutie) aanvaarden om de onderbrekingen en laadtijden te beperken?</description>
+        <dependency questionnumber="1" lowerlimit="0" upperlimit="4"/>
+        <dependency questionnumber="3" lowerlimit="2" upperlimit="5"/>		
+        <dependency questionnumber="5" lowerlimit="2" upperlimit="2"/>
+        <dependency questionnumber="6" lowerlimit="2" upperlimit="2"/>
+        <action action="decreaseQuality" answer="1"/>
+        <choice key="1">Ja</choice>
+        <choice key="2">Nee</choice>
+    </question> 
+    <question class="be.ugent.iii.questions.ChoiceQuestion" id="10">
+        <description>Zou u een mindere beeldkwaliteit (lagere resolutie) aanvaarden om de initiele laadtijden te beperken?</description>
+        <dependency questionnumber="1" lowerlimit="0" upperlimit="4"/>
+        <dependency questionnumber="3" lowerlimit="2" upperlimit="5"/>	
+        <dependency questionnumber="5" lowerlimit="1" upperlimit="1"/>
+        <dependency questionnumber="6" lowerlimit="2" upperlimit="2"/>
+        <dependency questionnumber="7" lowerlimit="2" upperlimit="2"/>
+        <action action="decreaseQuality" answer="1"/>
+        <choice key="1">Ja</choice>
+        <choice key="2">Nee</choice>
+    </question>  
+    <question class="be.ugent.iii.questions.ChoiceQuestion" id="11">
+        <description>Zou u een mindere beeldkwaliteit (lagere resolutie) aanvaarden om het aantal onderbrekingen te beperken?</description>
+        <dependency questionnumber="1" lowerlimit="0" upperlimit="4"/>
+        <dependency questionnumber="3" lowerlimit="2" upperlimit="5"/>	
+        <dependency questionnumber="5" lowerlimit="2" upperlimit="2"/>
+        <dependency questionnumber="6" lowerlimit="1" upperlimit="1"/>
+        <dependency questionnumber="8" lowerlimit="2" upperlimit="2"/>
+        <action action="decreaseQuality" answer="1"/>
+        <choice key="1">Ja</choice>
+        <choice key="2">Nee</choice>
+    </question> 
+    <question class="be.ugent.iii.questions.OpenQuestion" id="12">
+        <description>Opmerkingen?</description>
+    </question> 
+</questionList>

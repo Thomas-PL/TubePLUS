@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Deze voorkeursinstelling zijn niet toegankelijk vanuit de applicatie!!! -->
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="deviceinfo_retrieved" />
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="playerinfo_retrieved" />
+    
+    <!-- optimizer_preferences -->
+    <!--<PreferenceScreen android:title="@string/quality_performance" >-->
+        <be.ugent.iii.preferences.TogglePreference
+            android:defaultValue="0"
+            android:key="quality_performance" 
+            android:title="@string/quality_performance"
+            android:enabled="false" />
+   <!-- </PreferenceScreen>-->
+    
+   <!-- <PreferenceCategory android:title="@string/location_header" >-->
+        <ListPreference
+            android:defaultValue="1"
+            android:entries="@array/location_adaption_entries"
+            android:entryValues="@array/video_quality_entryvalues"
+            android:key="location_level_change"
+            android:title="@string/location_adaption" />
+
+        <EditTextPreference
+            android:defaultValue="30"
+            android:inputType="number"
+            android:key="location_speed_threshold"
+            android:title="@string/location_speed" />
+   <!-- </PreferenceCategory>-->
+    
+   <!-- <PreferenceCategory android:title="@string/cpu_header" >-->
+        <EditTextPreference
+            android:defaultValue="10"
+            android:inputType="number"
+            android:key="cpu_number_of_times"
+            android:title="@string/cpu_number_of_times" />
+        <EditTextPreference
+            android:defaultValue="95"
+            android:inputType="number"
+            android:key="cpu_up_threshold"
+            android:title="@string/cpu_threshold" />
+        <EditTextPreference
+            android:defaultValue="40"
+            android:inputType="number"
+            android:key="cpu_down_threshold"
+            android:title="@string/cpu_threshold" />
+
+        <ListPreference
+            android:defaultValue="4"
+            android:entries="@array/video_quality_entries"
+            android:entryValues="@array/video_quality_entryvalues"
+            android:key="cpu_quality"
+            android:title="@string/cpu_max_quality" />
+    <!--</PreferenceCategory>-->
+
+
+    <!-- framework_preferences -->
+   <!-- <PreferenceCategory android:title="@string/objectieve_params" >-->
+       <!-- <PreferenceScreen
+            android:summary="Quality of service"
+            android:title="QoS" >-->
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="registerQosUpdates"
+                android:title="@string/qos_qos" />
+
+           <!-- <PreferenceScreen
+                android:dependency="registerQosUpdates"
+                android:summary="Tijd tussen metingen"
+                android:title="@string/qos_interval" >-->
+                <EditTextPreference
+                    android:defaultValue="10"
+                    android:inputType="number"
+                    android:key="qosInterval"
+                    android:summary="Aantal seconden tussen metingen"
+                    android:title="@string/qos_interval" />
+         <!--   </PreferenceScreen>-->
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="logConnectionType"
+                android:summary="Internetconnectie en roaming"
+                android:title="@string/qos_connectiontype" />
+               <!-- android:dependency="registerQosUpdates"-->
+                
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="getMobileSignalInfo"
+                android:summary="Mobiele dataverbinding"
+                android:title="@string/qos_mobile" />
+              <!--  android:dependency="registerQosUpdates"-->
+                
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="getWifiSignalInfo"
+                android:summary="WiFi-verbinding"
+                android:title="@string/qos_wifi" />
+               <!-- android:dependency="registerQosUpdates"-->
+                
+       <!-- </PreferenceScreen>-->
+       <!-- <PreferenceScreen
+            android:summary="GPS-locatie"
+            android:title="Locatiegegevens" >-->
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="registerLocationUpdates"
+                android:title="@string/gps_location" />
+
+            <EditTextPreference
+                android:defaultValue="30"
+                android:inputType="number"
+                android:key="gpsInterval"
+                android:summary="Aantal seconden tussen metingen"
+                android:title="@string/gps_interval" />
+               <!-- android:dependency="registerLocationUpdates"-->
+                
+            <EditTextPreference
+                android:defaultValue="1"
+                android:inputType="number"
+                android:key="gpsDistance"
+                android:summary="Afstand in meter tussen metingen"
+                android:title="@string/gps_distance" />
+               <!-- android:dependency="registerLocationUpdates"-->
+                
+
+            <ListPreference
+                android:defaultValue="gps"
+                android:entries="@array/gps_provider_entries"
+                android:entryValues="@array/gps_provider_entryvalues"
+                android:key="gpsProvider"
+                android:summary="Gebruikte GPS-provider"
+                android:title="@string/gps_provider" />
+              <!--  android:dependency="registerLocationUpdates"-->
+                
+      <!--  </PreferenceScreen>-->
+      <!--  <PreferenceScreen android:title="Toestelbelasting"
+                          android:summary="CPU, geheugen en batterij" >-->
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="registerLoadUpdates"
+                android:title="@string/device_load" />
+
+            <EditTextPreference
+                android:defaultValue="10"
+                android:inputType="number"
+                android:key="deviceInterval"
+                android:summary="Aantal seconden tussen metingen"
+                android:title="@string/device_interval" />
+              <!--  android:dependency="registerLoadUpdates"-->
+                
+
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="isLowOnMemory"
+                android:title="@string/device_lowmemory" />
+              <!--  android:dependency="registerLoadUpdates"-->
+                
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="getCpuUsage"
+                android:title="@string/device_cpu" />
+              <!--  android:dependency="registerLoadUpdates"-->
+                
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="getBatteryLevel"
+                android:title="@string/device_battery" />
+              <!--  android:dependency="registerLoadUpdates"-->
+                
+       <!-- </PreferenceScreen>-->
+        
+    <!--</PreferenceCategory>-->
+
+</PreferenceScreen>

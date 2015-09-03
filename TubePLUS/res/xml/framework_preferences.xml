@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/application" >
+        <CheckBoxPreference
+                android:defaultValue="true"
+                android:enabled="true"
+                android:key="plugHeadset"
+                android:title="@string/plugHeadset" />        
+        <CheckBoxPreference
+                android:defaultValue="false"
+                android:enabled="true"
+                android:key="dynamicVolume"
+                android:title="@string/dynamic_volume" />
+        <CheckBoxPreference
+                android:defaultValue="false"
+                android:enabled="true"
+                android:key="deviceAdmin"
+                android:title="@string/device_admin" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:enabled="true"
+            android:key="dynamicLight"
+            android:title="@string/dynamic_light" />
+    </PreferenceCategory>
+</PreferenceScreen>

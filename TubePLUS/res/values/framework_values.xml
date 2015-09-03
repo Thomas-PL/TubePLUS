@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Menu-opbouw -->
+    <string name="objectieve_params">Objectieve parameters</string>
+    <string name="storage_settings">Opslag sessiegegevens</string>
+
+    <!-- Storage instellingen -->
+    <string name="freq_storage">Aantal sessies</string>
+    <string name="send_remote_server">Verstuur sessiegegevens</string>
+    <string name="plugHeadset">Stop playback bij unpluggen headset</string>
+    <string name="dynamic_volume">Volume past zich aan aan omgeving</string>
+    <string name="dynamic_light">Schermbelichting past zich aan aan omgevingslicht</string>
+
+    <string-array name="storage_number_entries">
+        <item>Laatste sessie</item>
+        <item>Laatste 5 sessies</item>
+        <item>Laatste 20 sessies</item>
+        <item>Laatste 50 sessies</item>
+        <item>Laatste 100 sessies</item>
+    </string-array>
+    <string-array name="storage_number_entryvalues">
+        <item>1</item>
+        <item>5</item>
+        <item>20</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+
+    <!-- QoS -->
+    <string name="qos_qos">QoS</string>
+    <string name="qos_interval">Intervaltijd</string>
+    <string name="qos_polling">Gebruik polling</string>
+    <string name="qos_connectiontype">Verbindingsstatus</string>
+    <string name="qos_mobile">Signaalgegevens</string>
+    <string name="qos_wifi">Signaalgegevens</string>
+
+    <!-- GPS -->
+    <string name="gps_interval">Intervaltijd</string>
+    <string name="gps_distance">Minimale afstand</string>
+    <string name="gps_location">Locatiegegevens</string>
+    <string name="gps_provider">Locatieprovider</string>
+
+    <string-array name="gps_provider_entries">
+        <item>GPS, A-GPS</item>
+        <item>Cell ID, WiFi Mac ID</item>
+        <item>Passief</item>
+    </string-array>
+    <string-array name="gps_provider_entryvalues">
+        <item>gps</item>
+        <item>network</item>
+        <item>passive</item>
+    </string-array>
+
+    <!-- Toestelbelasting -->
+    <string name="device_load">Toestelbelasting</string>
+    <string name="device_interval">Intervaltijd</string>
+    <string name="device_lowmemory">Geheugengebruik</string>
+    <string name="device_cpu">CPU-gebruik</string>
+    <string name="device_battery">Batterijstatus</string>
+
+</resources>

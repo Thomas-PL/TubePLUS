@@ -1,0 +1,45 @@
+# view AndroidManifest.xml #generated:71
+-keep class be.ugent.iii.activities.EnableGPSActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:63
+-keep class be.ugent.iii.activities.FrameworkPrefsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:40
+-keep class be.ugent.iii.activities.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:67
+-keep class be.ugent.iii.activities.OptimizerPrefsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:55
+-keep class be.ugent.iii.activities.PlayerActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:83
+-keep class be.ugent.iii.activities.SearchResultsActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:28
+-keep class be.ugent.iii.application.FrameworkApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:108
+-keep class be.ugent.iii.events.UnplugEvent { <init>(...); }
+
+# view res/xml/app_preferences.xml #generated:14
+-keep class be.ugent.iii.preferences.TogglePreference { <init>(...); }
+
+# view AndroidManifest.xml #generated:75
+-keep class be.ugent.iii.questions.ChoiceQuestionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class be.ugent.iii.questions.OpenQuestionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:77
+-keep class be.ugent.iii.questions.RatingQuestionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:96
+-keep class be.ugent.iii.sensors.Darclass { <init>(...); }
+
+# view AndroidManifest.xml #generated:35
+-keep class be.ugent.iii.service.FrameworkService { <init>(...); }
+
+# view res/layout/activity_video.xml #generated:7
+-keep class io.vov.vitamio.widget.VideoView { <init>(...); }
+

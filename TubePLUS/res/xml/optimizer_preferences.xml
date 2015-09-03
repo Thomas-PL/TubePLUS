@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="@string/mobile_header" >
+        <PreferenceScreen android:title="@string/mobile_not_roaming" >
+            <ListPreference
+                android:defaultValue="0"
+                android:entries="@array/video_quality_entries"
+                android:entryValues="@array/video_quality_entryvalues"
+                android:key="quality_2.5g"
+                android:title="@string/settings_2_5g" />
+            <ListPreference
+                android:defaultValue="0"
+                android:entries="@array/video_quality_entries"
+                android:entryValues="@array/video_quality_entryvalues"
+                android:key="quality_2.75g"
+                android:title="@string/settings_2_75g" />
+            <ListPreference
+                android:defaultValue="1"
+                android:entries="@array/video_quality_entries"
+                android:entryValues="@array/video_quality_entryvalues"
+                android:key="quality_3g"
+                android:title="@string/settings_3g" />
+            <ListPreference
+                android:defaultValue="3"
+                android:entries="@array/video_quality_entries"
+                android:entryValues="@array/video_quality_entryvalues"
+                android:key="quality_3.5g"
+                android:title="@string/settings_3_5g" />
+            <ListPreference
+                android:defaultValue="4"
+                android:entries="@array/video_quality_entries"
+                android:entryValues="@array/video_quality_entryvalues"
+                android:key="quality_4g"
+                android:title="@string/settings_4g" />
+        </PreferenceScreen>
+        <PreferenceScreen android:title="@string/mobile_roaming" >
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="other_quality_while_roaming"
+                android:title="@string/detect_roaming" />
+
+            <ListPreference
+                android:defaultValue="0"
+                android:dependency="other_quality_while_roaming"
+                android:entries="@array/video_quality_entries"
+                android:entryValues="@array/video_quality_entryvalues"
+                android:key="roaming_quality_2.5g"
+                android:title="@string/settings_2_5g" />
+            <ListPreference
+                android:defaultValue="0"
+                android:dependency="other_quality_while_roaming"
+                android:entries="@array/video_quality_entries"
+                android:entryValues="@array/video_quality_entryvalues"
+                android:key="roaming_quality_2.75g"
+                android:title="@string/settings_2_75g" />
+            <ListPreference
+                android:defaultValue="1"
+                android:dependency="other_quality_while_roaming"
+                android:entries="@array/video_quality_entries"
+                android:entryValues="@array/video_quality_entryvalues"
+                android:key="roaming_quality_3g"
+                android:title="@string/settings_3g" />
+            <ListPreference
+                android:defaultValue="1"
+                android:dependency="other_quality_while_roaming"
+                android:entries="@array/video_quality_entries"
+                android:entryValues="@array/video_quality_entryvalues"
+                android:key="roaming_quality_3.5g"
+                android:title="@string/settings_3_5g" />
+            <ListPreference
+                android:defaultValue="3"
+                android:dependency="other_quality_while_roaming"
+                android:entries="@array/video_quality_entries"
+                android:entryValues="@array/video_quality_entryvalues"
+                android:key="roaming_quality_4g"
+                android:title="@string/settings_4g" />
+        </PreferenceScreen>
+
+        <ListPreference
+            android:defaultValue="4"
+            android:entries="@array/video_quality_entries"
+            android:entryValues="@array/video_quality_entryvalues"
+            android:key="wifi_quality"
+            android:title="@string/wifi_connection" />
+    </PreferenceCategory>
+</PreferenceScreen>
